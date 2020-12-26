@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+
+{% block title %} Accueil | {{ parent() }} {% endblock %}
+
+{% block content %}
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2><a href="#">Exemple de titre</a></h2>
+                <p>Exemple d'apercu de titre</p>
+            </div>
+            <div class="meta">
+                <time class="published" datetime="2020-12-05">Decembre 5, 2020</time>
+                <a href="#" class="author"><span class="name">Auteur</span></a>
+            </div>
+        </header>
+        <a href="#"></a>
+        <p>Voici l'article et son contenu</p>
+        <footer>
+            <ul class="actions">
+                <li><a href="#" class="button large">A lire</a></li>
+            </ul>
+        </footer>
+    </article>
+{% endblock %}
+

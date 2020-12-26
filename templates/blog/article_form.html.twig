@@ -1,0 +1,26 @@
+{{ form_start(form, {'attr' : {'class': 'row'}}) }}
+<div>
+<div>
+    {{ form_widget(form.title, {'attr': {'placeholder': 'Titre de l\'article'}}) }}
+    {{ form_label(form.title) }}
+</div>
+<div>
+    {{ form_widget(form.apercu, {'attr': {'placeholder': 'Apercu de l\'article'}}) }}
+    {{ form_label(form.apercu) }}
+</div>
+<div>
+    {{ form_widget(form.date, {'attr': {'placeholder': 'Date de l\'article'}}) }}
+    {{ form_label(form.date) }}
+</div>
+<div>{{ form_widget(form.auteur, {'attr': {'placeholder': 'Auteur de l\'article'}}) }}
+    {{ form_label(form.auteur) }}
+</div>
+<div>
+    {{ form_widget(form.contenu, {'attr': {'placeholder': 'Contenu de l\'article'}}) }}
+    {{ form_label(form.contenu) }}
+</div>
+<div>
+    <input type="submit" name="" value="Enregistrer">
+</div>
+</div>
+{{ form_end(form) }}
